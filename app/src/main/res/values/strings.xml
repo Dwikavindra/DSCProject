@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DSCProject</string>
+    <string name="galenus1">
+        Mempermudah kamu<br></br>
+        dengan daftar antrian<br></br>
+        medical check up<br></br>
+        secara online<br></br>
+
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
