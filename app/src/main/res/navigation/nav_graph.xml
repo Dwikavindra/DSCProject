@@ -18,5 +18,13 @@
         android:id="@+id/fragmentB"
         android:name="com.example.dscproject.fragments.FragmentB"
         android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentC"
+            app:destination="@id/fragmentC" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.dscproject.fragments.FragmentC"
+        android:label="FragmentC" />
 </navigation>
