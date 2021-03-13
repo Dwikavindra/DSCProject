@@ -31,39 +31,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.659"/>
-
     <ImageButton
-        android:id="@+id/movetoHomeSign"
+        android:id="@+id/movetofragmentd"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/rectanglebutton"
         android:text="Move To Fragment B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintLeft_toLeftOf="@id/circleshape2"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
         android:id="@+id/movetofragmentb"
-        android:layout_width="74dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:layout_marginBottom="65dp"
         android:background="@drawable/backbutton"
         android:text="Move To Fragment B"
         app:layout_constraintBottom_toBottomOf="parent"
-
-
-        app:layout_constraintEnd_toStartOf="@+id/rectangleshape"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/movetofragmentd"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/rectangleshape"
@@ -71,12 +64,11 @@
         android:layout_height="13dp"
         android:background="@drawable/roundedaccesory"
         app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="@id/circleshape"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toStartOf="@id/movetofragmentb"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.4854" />
+        app:layout_constraintEnd_toStartOf="@+id/movetofragmentd"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
 
     <TextView
         android:id="@+id/circleshape"
@@ -85,11 +77,11 @@
         android:background="@drawable/roundedaccesory"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintLeft_toLeftOf="@+id/rectangleshape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.494" />
 
     <TextView
         android:id="@+id/circleshape2"
@@ -98,9 +90,9 @@
         android:background="@drawable/roundedaccesory"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintLeft_toLeftOf="@+id/circleshape"
         app:layout_constraintStart_toEndOf="@+id/circleshape"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.494" />
 </androidx.constraintlayout.widget.ConstraintLayout>
