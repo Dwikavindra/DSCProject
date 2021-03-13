@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "DSCProject"
+rootProject.name = "page1dsc"
