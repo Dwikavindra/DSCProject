@@ -15,7 +15,7 @@
         android:layout_height="64dp"
         android:layout_marginBottom="64dp"
         android:background="@drawable/rectanglebutton"
-        android:text="Move To Fragment b"
+        android:text="Move To Fragment B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintLeft_toLeftOf="parent"
