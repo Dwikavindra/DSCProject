@@ -26,5 +26,6 @@
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.dscproject.fragments.FragmentC"
-        android:label="FragmentC" />
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
 </navigation>
