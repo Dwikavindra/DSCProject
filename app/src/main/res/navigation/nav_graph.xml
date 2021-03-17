@@ -22,10 +22,17 @@
         <action
             android:id="@+id/action_fragmentB_to_fragmentC"
             app:destination="@id/fragmentC" />
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentA"
+            app:destination="@id/fragmentA" />
     </fragment>
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.dscproject.fragments.FragmentC"
         android:label="fragment_c"
-        tools:layout="@layout/fragment_c" />
+        tools:layout="@layout/fragment_c" >
+        <action
+            android:id="@+id/action_fragmentC_to_fragmentB"
+            app:destination="@id/fragmentB" />
+    </fragment>
 </navigation>

@@ -5,19 +5,48 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.dscproject.R
+import com.example.dscproject.databinding.FragmentABinding
+import com.example.dscproject.databinding.FragmentBBinding
 
 
 class FragmentB : Fragment() {
-
+    private var _binding: FragmentBBinding? = null
+    private val binding
+        get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_b, container, false)
+        _binding = FragmentBBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.movetofragmentc.setOnClickListener() {
+            val action = FragmentBDirections.actionFragmentBToFragmentC() //ini harusnya B ke C kan
+            findNavController().navigate(action)
+        }
+        binding.movetofragmenta.setOnClickListener() {
+            val action2 = FragmentBDirections.actionFragmentBToFragmentA()
+            findNavController().navigate(action2)
+        }
     }
 
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
+
+
+
