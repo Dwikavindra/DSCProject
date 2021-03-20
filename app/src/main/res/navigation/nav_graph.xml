@@ -26,5 +26,29 @@
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.dscproject.fragments.FragmentC"
-        android:label="FragmentC" />
+        android:label="FragmentC" >
+        <action
+            android:id="@+id/action_fragmentC_to_homeSign"
+            app:destination="@id/homeSign" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.dscproject.auth.SignUp"
+        android:label="SignUp" />
+    <fragment
+        android:id="@+id/homeSign"
+        android:name="com.example.dscproject.auth.HomeSign"
+        android:label="HomeSign" >
+        <action
+            android:id="@+id/action_homeSign_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_homeSign_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.dscproject.auth.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
 </navigation>
