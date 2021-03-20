@@ -35,9 +35,6 @@ class HomeSign: Fragment() {
             val action=HomeSignDirections.actionHomeSignToSignIn()
             findNavController().navigate(action)
         }
-        binding.topBackButton.setOnClickListener(){
-            activity?.onBackPressed()
-        }
     }
 
 }
