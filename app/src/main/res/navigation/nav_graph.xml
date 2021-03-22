@@ -34,5 +34,22 @@
         <action
             android:id="@+id/action_fragmentC_to_fragmentB"
             app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_fragmentC_to_iphone89"
+            app:destination="@id/iphone89" />
     </fragment>
+    <fragment
+        android:id="@+id/iphone89"
+        android:name="com.example.dscproject.fragments.iphone89"
+        android:label="fragment_iphone89"
+        tools:layout="@layout/fragment_iphone89" >
+        <action
+            android:id="@+id/action_iphone89_to_iphone814"
+            app:destination="@id/iphone814" />
+    </fragment>
+    <fragment
+        android:id="@+id/iphone814"
+        android:name="com.example.dscproject.iphone814"
+        android:label="fragment_iphone814"
+        tools:layout="@layout/fragment_iphone814" />
 </navigation>

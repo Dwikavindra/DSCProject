@@ -95,12 +95,11 @@
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:src="@drawable/vector_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Aktivitas" />
+        tools:layout_editor_absoluteY="241dp" />
 
     <TextView
         android:id="@+id/Fitur"
@@ -126,23 +125,6 @@
         android:src="@drawable/vector_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fitur" />
-
-    <TextView
-        android:id="@+id/Aktivitas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginRight="66dp"
-        android:fontFamily="@font/poppins"
-        android:text="Aktivitas"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Fitur"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <ImageButton
         android:id="@+id/DaftarMedicalCheck"
@@ -185,11 +167,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="36dp"
         android:background="@drawable/rectangle_22__1_"
         android:src="@drawable/rectangle_22__1_"
         app:layout_constraintStart_toEndOf="@+id/DaftarMedicalCheck"
-        app:layout_constraintTop_toBottomOf="@+id/Aktivitas" />
+        tools:layout_editor_absoluteY="267dp" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -218,15 +199,15 @@
 
     <ImageButton
         android:id="@+id/ApotekOnline"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:background="@drawable/rectangle_23"
+        android:background="@null"
         android:src="@drawable/rectangle_23"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Aktivitas" />
+        tools:layout_editor_absoluteY="331dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -248,21 +229,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:background="@drawable/rectangle_54"
+        android:background="@null"
         android:src="@drawable/rectangle_54"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DaftarMedicalCheck"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:src="@drawable/_340_01"
-        tools:layout_editor_absoluteX="56dp"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
         tools:layout_editor_absoluteY="431dp" />
 
     <TextView
@@ -407,5 +391,22 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/About"
         tools:layout_editor_absoluteX="269dp" />
+
+    <Button
+        android:id="@+id/aktivitas"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="24dp"
+        android:capitalize="none"
+        android:fontFamily="@font/poppins"
+        android:shadowColor="@android:color/transparent"
+        android:text="Aktivitas"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/Fitur"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
