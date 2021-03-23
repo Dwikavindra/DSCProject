@@ -126,272 +126,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fitur" />
 
-    <ImageButton
-        android:id="@+id/DaftarMedicalCheck"
-        android:layout_width="137dp"
-        android:layout_height="188dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="37dp"
-        android:background="@drawable/rectangle_21"
-        android:src="@drawable/rectangle_21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/_626140_01_1"
-        app:layout_constraintStart_toStartOf="@+id/DaftarMedicalCheck"
-        app:layout_constraintTop_toTopOf="@+id/DaftarMedicalCheck" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="88dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="77dp"
-        android:fontFamily="@font/poppins"
-        android:text="Daftar Medical Check up"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/DaftarMedicalCheck"
-        app:layout_constraintTop_toTopOf="@+id/DaftarMedicalCheck" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:background="@drawable/rectangle_22__1_"
-        android:src="@drawable/rectangle_22__1_"
-        app:layout_constraintStart_toEndOf="@+id/DaftarMedicalCheck"
-        tools:layout_editor_absoluteY="267dp" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/_884169_01_1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        tools:layout_editor_absoluteX="193dp" />
-
-    <TextView
-        android:id="@+id/InformasiTerkini"
-        android:layout_width="60dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="46dp"
-        android:fontFamily="@font/poppins"
-        android:gravity="right"
-        android:text="Informasi Terkini"
-        android:textColor="@color/white"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageView13" />
-
-    <ImageButton
-        android:id="@+id/ApotekOnline"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:background="@null"
-        android:src="@drawable/rectangle_23"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="331dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="56dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="61dp"
-        android:fontFamily="@font/poppins"
-        android:text="Kunjungi Apotek Online"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ApotekOnline"
-        app:layout_constraintStart_toStartOf="@+id/ApotekOnline" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:background="@null"
-        android:src="@drawable/rectangle_54"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DaftarMedicalCheck"
-        app:layout_constraintVertical_bias="0.0"
-        style="?android:attr/borderlessButtonStyle"/>
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:src="@drawable/_340_01"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        tools:layout_editor_absoluteY="431dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:fontFamily="@font/poppins"
-        android:text="Call Center"
-        android:textColor="@color/white"
-        android:textSize="9sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:fontFamily="@font/poppins"
-        android:text="0807 1 811 811"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
-
-    <ImageButton
-        android:id="@+id/Jadwal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rectangle_24"
-        android:src="@drawable/rectangle_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="30dp" />
-
-    <ImageButton
-        android:id="@+id/Lokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rectangle_24"
-        android:src="@drawable/rectangle_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="101dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/_480286_01_1"
-        app:layout_constraintBottom_toBottomOf="@+id/Jadwal"
-        app:layout_constraintTop_toTopOf="@+id/Jadwal"
-        tools:layout_editor_absoluteX="45dp" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/_5530__converted__01_1"
-        app:layout_constraintBottom_toBottomOf="@+id/Lokasi"
-        app:layout_constraintTop_toTopOf="@+id/Lokasi"
-        tools:layout_editor_absoluteX="113dp" />
-
-    <ImageButton
-        android:id="@+id/Dokter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rectangle_24"
-        android:src="@drawable/rectangle_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="169dp" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss_1"
-        app:layout_constraintBottom_toBottomOf="@+id/Dokter"
-        app:layout_constraintTop_toTopOf="@+id/Dokter"
-        tools:layout_editor_absoluteX="202dp" />
-
-    <ImageButton
-        android:id="@+id/About"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rectangle_24"
-        android:src="@drawable/rectangle_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="240dp" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:src="@drawable/_301_01_1"
-        app:layout_constraintBottom_toBottomOf="@+id/About"
-        tools:layout_editor_absoluteX="261dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jadwal"
-        android:textColor="@color/white"
-        android:textSize="12ps"
-        app:layout_constraintBottom_toBottomOf="@+id/Jadwal"
-        tools:layout_editor_absoluteX="50dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lokasi"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/Lokasi"
-        tools:layout_editor_absoluteX="126dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dokter"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Dokter"
-        tools:layout_editor_absoluteX="201dp" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="About"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/About"
-        tools:layout_editor_absoluteX="269dp" />
-
     <Button
         android:id="@+id/aktivitas"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -408,5 +142,151 @@
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/Fitur"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <ImageButton
+        android:id="@+id/DaftarMedCheck"
+        android:layout_width="137dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/DaftarMedCheck"
+        android:src="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/callCenter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Informasi"
+        android:layout_width="126dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/informasiterkini"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/DaftarMedCheck"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <ImageButton
+        android:id="@+id/Apotek"
+        android:layout_width="126dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/apotek"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/DaftarMedCheck"
+        app:layout_constraintTop_toBottomOf="@+id/Informasi" />
+
+    <ImageButton
+        android:id="@+id/callCenter"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:background="@drawable/callcenter"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/hospital"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/callCenter" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+    <ImageButton
+        android:id="@+id/jadwal"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/jadwal"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toStartOf="@+id/lokasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callCenter" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jadwal"
+        android:textColor="@color/white"
+        android:textSize="12ps"
+        app:layout_constraintTop_toBottomOf="@+id/jadwal"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <ImageButton
+        android:id="@+id/lokasi"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/maps"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toEndOf="@+id/jadwal"
+        app:layout_constraintTop_toBottomOf="@+id/callCenter" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:text="Lokasi"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/dokter"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toEndOf="@+id/lokasi"
+        app:layout_constraintTop_toBottomOf="@+id/callCenter" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="16dp"
+        android:text="Dokter"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
