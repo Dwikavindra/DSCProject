@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944363748964",
+    "project_id": "galenus-d7f4e",
+    "storage_bucket": "galenus-d7f4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944363748964:android:bea6b5732c32301bda2971",
+        "android_client_info": {
+          "package_name": "com.example.navigationcomponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944363748964-irc8451v54ri11kqk6969hvrmn482iqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZE6xd2LAz9hpynXfdWAF66PR53sg2mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944363748964-irc8451v54ri11kqk6969hvrmn482iqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
