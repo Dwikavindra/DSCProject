@@ -1,8 +1,9 @@
-package com.example.dscproject.firebase
+package com.example.dscproject
 
 class User (
     val id:String=" ",
-            val name:String=" ",
+            val firstname:String=" ",
+    val lastname:String=" ",
     val email:String=" ",
     val image:String= " ",
     val mobile: Long =0,
