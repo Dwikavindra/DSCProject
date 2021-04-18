@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.example.dscproject.fragments.FragmentA
 import com.example.dscproject.fragments.FragmentB
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
