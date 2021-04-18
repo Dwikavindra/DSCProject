@@ -1,19 +1,16 @@
-package com.example.dscproject.fragments
+package com.example.dscproject.auth
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.dscproject.R
-import com.example.dscproject.databinding.FragmentABinding
-import com.example.dscproject.databinding.FragmentBBinding
+import com.example.dscproject.databinding.HomeSignBinding
+import com.example.dscproject.databinding.SignUpBinding
 
-
-
-class FragmentB : Fragment() {
-    private var _binding: FragmentBBinding?=null
+class HomeSign: Fragment() {
+    private var _binding: HomeSignBinding?=null
     private val binding
         get()=_binding!!
 
@@ -22,7 +19,7 @@ class FragmentB : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding= FragmentBBinding.inflate(inflater,container,false)
+        _binding= HomeSignBinding.inflate(inflater,container,false)
         return binding.root
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -30,11 +27,17 @@ class FragmentB : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.movetofragmentc.setOnClickListener(){
-            val action=FragmentBDirections.actionFragmentBToFragmentC()
+        binding.signUpbutton.setOnClickListener(){
+            val action=HomeSignDirections.actionHomeSignToSignUp()
             findNavController().navigate(action)
         }
+        binding.signinbutton.setOnClickListener(){
+            val action=HomeSignDirections.actionHomeSignToSignIn()
+            findNavController().navigate(action)
+        }
+        binding.topBackButton.setOnClickListener(){
+            activity?.onBackPressed()
+        }
     }
-
 
 }

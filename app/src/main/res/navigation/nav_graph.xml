@@ -22,34 +22,33 @@
         <action
             android:id="@+id/action_fragmentB_to_fragmentC"
             app:destination="@id/fragmentC" />
-        <action
-            android:id="@+id/action_fragmentB_to_fragmentA"
-            app:destination="@id/fragmentA" />
     </fragment>
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.dscproject.fragments.FragmentC"
-        android:label="fragment_c"
-        tools:layout="@layout/fragment_c" >
+        android:label="FragmentC" >
         <action
-            android:id="@+id/action_fragmentC_to_fragmentB"
-            app:destination="@id/fragmentB" />
-        <action
-            android:id="@+id/action_fragmentC_to_iphone89"
-            app:destination="@id/iphone89" />
+            android:id="@+id/action_fragmentC_to_homeSign"
+            app:destination="@id/homeSign" />
     </fragment>
     <fragment
-        android:id="@+id/iphone89"
-        android:name="com.example.dscproject.fragments.iphone89"
-        android:label="fragment_iphone89"
-        tools:layout="@layout/fragment_iphone89" >
+        android:id="@+id/signUp"
+        android:name="com.example.dscproject.auth.SignUp"
+        android:label="SignUp" />
+    <fragment
+        android:id="@+id/homeSign"
+        android:name="com.example.dscproject.auth.HomeSign"
+        android:label="HomeSign" >
         <action
-            android:id="@+id/action_iphone89_to_iphone814"
-            app:destination="@id/iphone814" />
+            android:id="@+id/action_homeSign_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_homeSign_to_signUp"
+            app:destination="@id/signUp" />
     </fragment>
     <fragment
-        android:id="@+id/iphone814"
-        android:name="com.example.dscproject.iphone814"
-        android:label="fragment_iphone814"
-        tools:layout="@layout/fragment_iphone814" />
+        android:id="@+id/signIn"
+        android:name="com.example.dscproject.auth.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
 </navigation>

@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.dscproject.R
 import com.example.dscproject.databinding.FragmentABinding
+import com.example.dscproject.firebase.FirestoreClass
 
 
 class FragmentA : Fragment() {
@@ -27,6 +27,11 @@ private var _binding:FragmentABinding?=null
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var currentID= FirestoreClass().getCurrentUserID()
+//        if(currentID.isNotEmpty()){
+//            startActivity(Intent(requireContext(),FirstPageView::class.java))
+//            activity?.finish()
+//        } to be implemented later
         binding.movetofragmentb.setOnClickListener(){
             val action=FragmentADirections.actionFragmentAToFragmentB()
             findNavController().navigate(action)
