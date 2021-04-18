@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.dscproject.R
 import com.example.dscproject.databinding.FragmentABinding
 import com.example.dscproject.databinding.FragmentBBinding
-import kotlinx.parcelize.Parcelize
+
 
 
 class FragmentB : Fragment() {
