@@ -6,18 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.dscproject.R
 import com.example.dscproject.databinding.Fragment81Binding
 import com.example.dscproject.databinding.FragmentABinding
-import com.example.dscproject.databinding.FragmentBBinding
-
+import com.example.dscproject.firebase.FirestoreClass
 
 
 class Fragment81 : Fragment() {
-    private var _binding: Fragment81Binding?=null
+    private var _binding:Fragment81Binding?=null
     private val binding
         get()=_binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,11 +28,22 @@ class Fragment81 : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var currentID= FirestoreClass().getCurrentUserID()
+//        if(currentID.isNotEmpty()){
+//            startActivity(Intent(requireContext(),FirstPageView::class.java))
+//            activity?.finish()
+//        } to be implemented later
         binding.mulai.setOnClickListener(){
-            val action=Fragment81Direction.actioniphone810toiphone89;
+            val action=Fragment81Directions.actionFragment81ToFragment89()
             findNavController().navigate(action)
         }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding=null
+    }
+
 
 
 }

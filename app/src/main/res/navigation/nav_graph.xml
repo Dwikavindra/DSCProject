@@ -53,28 +53,20 @@
         tools:layout="@layout/fragment_sign_in" >
         <action
             android:id="@+id/action_signIn_to_iphone_810"
-            app:destination="@id/iphone_81" />
+            app:destination="@id/Fragment81" />
     </fragment>
-    <activity
-        android:id="@+id/antrian"
-        android:name="com.example.dscproject.antrian"
-        android:label="activity_antrian"
-        tools:layout="@layout/activity_antrian" />
     <fragment
-        android:id="@+id/iphone89"
-        android:name="com.example.dscproject.fragments.iphone89"
-        android:label="fragment_iphone89"
+        android:id="@+id/Fragment89"
+        android:name="com.example.dscproject.fragments.Fragment89"
+        android:label="fragment89"
         tools:layout="@layout/fragment_iphone89" />
     <fragment
-        android:id="@+id/iphone_81"
-        android:name="com.example.dscproject.iphone_810"
-        android:label="fragment_81"
-        tools:layout="@layout/fragment_81" >
+        android:id="@+id/Fragment81"
+        android:name="com.example.dscproject.fragments.Fragment81"
+        android:label="fragment81"
+        tools:layout="@layout/fragment81">
         <action
-            android:id="@+id/action_iphone_810_to_iphone89"
-            app:destination="@id/iphone89" />
-        <action
-            android:id="@+id/action_iphone_81_to_iphone89"
-            app:destination="@id/iphone89" />
+            android:id="@+id/action_Fragment81_to_Fragment89"
+            app:destination="@id/Fragment89" />
     </fragment>
 </navigation>

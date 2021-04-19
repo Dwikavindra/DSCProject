@@ -9,11 +9,12 @@ import androidx.navigation.fragment.findNavController
 import com.example.dscproject.R
 import com.example.dscproject.databinding.FragmentABinding
 import com.example.dscproject.databinding.FragmentBBinding
+import com.example.dscproject.databinding.FragmentCBinding
+import com.example.dscproject.databinding.FragmentIphone89Binding
 
 
-
-class FragmentB : Fragment() {
-    private var _binding: FragmentBBinding?=null
+class Fragment89 : Fragment() {
+    private var _binding:FragmentIphone89Binding?=null
     private val binding
         get()=_binding!!
 
@@ -22,7 +23,7 @@ class FragmentB : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding= FragmentBBinding.inflate(inflater,container,false)
+        _binding= FragmentIphone89Binding.inflate(inflater,container,false)
         return binding.root
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -30,10 +31,16 @@ class FragmentB : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.movetofragmentc.setOnClickListener(){
-            val action=FragmentBDirections.actionFragmentBToFragmentC()
-            findNavController().navigate(action)
+        binding.aktivitas.setOnClickListener(){
+            //val action=Fragment89Direction.actionFragmentIphone89ToFragmentIphone814();
+            //findNavController().navigate(action)
+
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding=null
     }
 
 

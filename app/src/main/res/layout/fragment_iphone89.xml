@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#060143"
-    tools:context=".fragments.iphone89">
+    tools:context=".fragments.Fragment89">
 
     <ImageView
         android:id="@+id/notif"
@@ -150,7 +150,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/DaftarMedCheck"
+        android:background="@drawable/daftarmedcheck"
         android:src="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/callCenter"
         app:layout_constraintStart_toStartOf="parent" />
@@ -237,7 +237,7 @@
         android:layout_height="wrap_content"
         android:text="Jadwal"
         android:textColor="@color/white"
-        android:textSize="12ps"
+        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/jadwal"
         tools:layout_editor_absoluteX="36dp" />
 
