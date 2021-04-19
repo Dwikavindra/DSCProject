@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.dscproject.Home.Home
 import com.example.dscproject.R
 import com.example.dscproject.firebase.User
 
@@ -65,7 +66,7 @@ class SignUp: BaseFragment() {
                                 binding.etEmail.text.toString().trim { it <= ' ' }
                             )
                             FirestoreClass().registerUser(this@SignUp,user)
-                            startActivity(Intent(requireActivity(),testing::class.java))
+                            startActivity(Intent(requireActivity(),Home::class.java))
 
 //                            FirebaseAuth.getInstance().signOut()
 //                            activity?.finish()

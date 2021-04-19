@@ -17,5 +17,15 @@
         app:layout_constraintTop_toTopOf="parent"
   />
 
+    <Button
+        android:id="@+id/movetofragmentc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move to Fragment C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

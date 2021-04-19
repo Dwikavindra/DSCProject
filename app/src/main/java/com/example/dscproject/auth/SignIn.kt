@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.dscproject.Home.Home
 import com.example.dscproject.R
 import com.example.dscproject.databinding.SignInBinding
 import com.example.dscproject.firebase.FirestoreClass
@@ -97,7 +98,7 @@ class SignIn: BaseFragment() {
         Log.i("First Name",user.name)
         Log.i("Email",user.email)
 
-        startActivity(Intent(requireActivity(),testing::class.java))
+        startActivity(Intent(requireActivity(), Home::class.java))
         activity?.finish()
     }
 
