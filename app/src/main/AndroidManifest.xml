@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DSCProject">
-        <activity android:name=".testing"
-            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Home.Home"></activity>
+        <activity android:name=".antrian.antrian2" />
+        <activity android:name=".antrian.antrian" />
+        <activity
+            android:name=".testing"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

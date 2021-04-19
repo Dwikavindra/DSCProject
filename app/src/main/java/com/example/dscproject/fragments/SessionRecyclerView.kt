@@ -1,5 +1,6 @@
 package com.example.dscproject.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,13 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.dscproject.OnPilihanClickListener
 import com.example.dscproject.R
 import com.example.dscproject.databinding.FragmentSessionRecyclerViewBinding
 import com.example.dscproject.model.Sessions
-import com.google.firebase.database.*
+import com.example.dscproject.antrian.antrian
 import com.google.firebase.firestore.FirebaseFirestore
 
-class SessionRecyclerView : Fragment() {
+class SessionRecyclerView : Fragment(),OnPilihanClickListener {
 
 
 private var sessions= mutableListOf<String>("Sesi 1", "Sesi 2", "Sesi 3")
@@ -104,7 +106,7 @@ private var sessions= mutableListOf<String>("Sesi 1", "Sesi 2", "Sesi 3")
                         )
                     )
                     binding.SessionRecyclerView.layoutManager=LinearLayoutManager(requireContext())
-                    binding.SessionRecyclerView.adapter=RecyclerViewAdapter(listsession)
+                    binding.SessionRecyclerView.adapter=RecyclerViewAdapter(listsession,this)
 
                 }else{
                     Log.d("doesnt exist", "No such document")
@@ -114,6 +116,10 @@ private var sessions= mutableListOf<String>("Sesi 1", "Sesi 2", "Sesi 3")
                 Log.d("errordb", "get failed with ", exception)
             }
         Log.d("list3data", "DocumentSnapshot data: ${list2}")
+
     }
 
+    override fun onPilihanItemClicked() {
+        startActivity(Intent(requireContext(), antrian::class.java))
+    }
 }

@@ -34,6 +34,9 @@ class FragmentB : Fragment() {
             val action=FragmentBDirections.actionFragmentBToFragmentC()
             findNavController().navigate(action)
         }
+        binding.movetofragmenta.setOnClickListener(){
+            activity?.onBackPressed()
+        }
     }
 
 
