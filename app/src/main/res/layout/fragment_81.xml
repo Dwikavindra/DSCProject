@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#060143"
-    tools:context=".iphone_810" >
+    tools:context=".iphone_81" >
 
     <ImageView
         android:id="@+id/imageView16"
